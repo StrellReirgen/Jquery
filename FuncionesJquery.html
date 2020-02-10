@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Funciones Jquery</title>
+        <style type="text/css">
+        	.green{
+        		color: green;
+        	}
+        </style>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+        		$('.alerta').click(function(){
+        			alert('Eres Malo :(');
+        		})
+
+        		$('.esconder').click(function(){
+        			$('.fantasma').hide();
+        		})
+
+        		$('.mostrar').click(function(){
+        			$('.fantasma').show();
+        		})
+
+        		$('.toggleada').click(function(){
+        			$('.sorpresa').toggle();
+        		})
+        		
+        		$('.down').click(function(){
+        			$('.algo').slideDown();
+        		})
+        		
+        		$('.up').click(function(){
+        			$('.algo').slideUp();
+        		})
+        		
+        		$('.slideauto').click(function(){
+        			$('.algo2').slideToggle();
+        		})
+        		$('.in').click(function(){
+        			$('.dorime').fadeIn();
+        		})
+        		$('.out').click(function(){
+        			$('.dorime').fadeOut();
+        		})
+        		$('.agregar').click(function(){
+        			$('.verde').addClass('green');
+        		})
+        		$('.antes').click(function(){
+        			$('.antes').before("<b>Lo Vez </b>");
+        		})
+        		$('.despues').click(function(){
+        			$('.despues').after("<b>Esto si que es codigo </b>");
+        		})
+        		$('.more').click(function(){
+        			$('.parrafos').append("<p>Mas parrafos Shi Sheñol </p>");
+        		})
+        		$('.caos').click(function(){
+        			$('.wellshit').html("Hola Mundo");
+        		})
+
+        		$('.nose').click(function(){
+        			$('.esqueleto').attr(".verde");
+        		})
+        		$('.valor').click(function(){
+        			$('.miau').val();
+        		})
+        		$('.texto').click(function(){
+        			$('.guau').text("Za Warudo!!");
+        		})
+        	})
+        </script>
+    </head>
+    <body>
+    	<p class="alerta">No me hagas Click Por favor</p>
+
+    	<input class="esconder" type="submit" value="Esconder">
+    	<input class="mostrar" type="submit" value="Mostrar">
+
+    	<p class="fantasma">Este parrafo se esconde y se muestra</p>
+
+    	<input class="toggleada" type="submit" value="Toggle">
+
+    	<p class="sorpresa">Yo igual puedo desaparecer</p>
+
+    	<input class="down" type="submit" value="SlideDown">
+    	<input class="up" type="submit" value="SlideUp">
+
+    	<p class="algo">Arriba y Abajo, Shi Sheñol!!</p>
+
+    	<input class="slideauto" type="submit" value="SlideToggle">
+
+    	<p class="algo2">Yo tambien Shi Sheñol</p>
+
+    	<input class="in" type="submit" value="FadeIn">
+    	<input class="out" type="submit" value="FadeOut">
+
+    	<p class="dorime">Dorime... Dorime...</p>
+
+    	<input class="agregar" type="submit" value="Verde">
+
+    	<p class="verde">este parrafo se vuelve Verde</p>
+
+    	<p class="antes">Puedo hacer textos Negros detras de mi</p>
+
+    	<p class="despues">Y yo puedo hacer texto Negro despues de mi</p>
+
+    	<input class="more" type="submit" value="Mas Parrafos?">
+
+    	<div class="parrafos">
+    	</div>
+
+    	<input class="caos" type="submit" value="html">
+
+    	<p class="wellshit">Quien Eres</p>
+
+    	<input class="nose" type="submit" value="Attr">
+
+    	<p class="esqueleto">Haz click a este Parrafo</p>
+
+    	<input class="valor" type="submit" value="Val">
+
+    	<p class="miau">Haz click a este Parrafo</p>
+
+    	<input class="texto" type="submit" value="Texto">
+
+    	<p class="guau">Dio Brando</p>
+    </body>
+</html>
