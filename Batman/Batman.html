@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja a Gato</title>
+        <style type="text/css">
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body{
+                width: 780px;
+                margin: 0px auto;
+            }
+
+            img {
+                display: inline-block;
+                height: 300px;
+            }
+        </style>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+                $('img').hover(function(){
+                    var temp = $(this).attr('src');
+                    $(this).attr('src', $(this).attr('data-alt-src'));
+                    $(this).attr('data-alt-src', temp);
+                })
+        	})
+        </script>
+    </head>
+    <body>
+    	<img src="Batman.jpg" data-alt-src='Batman2.jpg'>
+        <img src="Batman.jpg" data-alt-src='Batman2.jpg'>
+        <img src="Batman.jpg" data-alt-src='Batman2.jpg'>
+        <img src="Batman.jpg" data-alt-src='Batman2.jpg'>
+        <img src="Batman.jpg" data-alt-src='Batman2.jpg'>
+        <img src="Batman.jpg" data-alt-src='Batman2.jpg'>
+    </body>
+</html>
